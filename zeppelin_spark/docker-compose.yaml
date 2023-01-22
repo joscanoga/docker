@@ -34,7 +34,7 @@ services:
       - "8082:8080"
     volumes:
       - ./zeppelin/notebook:/opt/zeppelin/notebook
-      - ./zeppelin/conf2:/opt/zeppelin/conf
+      - ./zeppelin/conf:/opt/zeppelin/conf
       - spark_volume:/opt/zeppelin/spark
 
     environment:
